@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USA Travel Blog</title>
+    <link rel="stylesheet" href="mission2.css" />
+    <script src="mission2.js" defer></script>
+  </head>
+  <body>
+    <!-- Introductory Header -->
+    <header>
+      <h1>My Travels in the US of A!</h1>
+      <h3 id="subtitle">
+        For the past roughly three weeks, I've been travelling around the states
+        with my family. This is a summary of the highlights for each of the
+        major stops.
+      </h3>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <!-- Shift + Alt + ⬇️ -->
+        <li class="btn nav-link" id="chicagoButton" onclick="hideContent1()">Chicago</li>
+        <li class="btn nav-link" id="dallasButton" onclick="hideContent2()">Dallas</li>
+        <li class="btn nav-link" id="cosButton" onclick="hideContent3()">Colorado Springs</li>
+        <li class="btn nav-link" id="laButton" onclick="hideContent4()">Los Angeles</li>
+      </ul>
+    </nav>
+    <!-- Content Boxes -->
+    <div id="chicago" style="display: none;">
+      <h3>Chicago, IL</h3>
+      <section class="images">
+        <img
+          id="chicago-highrises"
+          src="Chicago Highrises.jpg"
+          alt="Chicago Highrises"
+        />
+        <img
+          id="chicago-street"
+          src="Chicago Street.jpg"
+          alt="Chicago Street"
+        />
+      </section>
+      <p>
+        Chicago was surpisingly nice for such a metropolitan city. The
+        architecture of the city had a great mix of old-fashioned buildings and
+        more modern skyscrapers. The streets were bustling with busy
+        businesspeople and local folks with INTERESTING conversations.
+      </p>
+    </div>
+    <div id="dallas" style="display: none;">
+      <h3>Dallas, TX</h3>
+      <section class="images">
+        <img
+          id="dallas-skyline"
+          src="Dallas Skyline.jpg"
+          alt="Dallas Skyline"
+        />
+        <img
+          id="dallas-street"
+          src="Dallas Grassy Knoll.jpg"
+          alt="Dallas Grassy Knoll"
+        />
+      </section>
+      <p>
+        Dallas was a much bigger city than I expected. Despite not having many
+        highrises, the city sprawls out over a massive area interconnected by an
+        excellent infrastructure of highways. The heat was a massive surprise
+        and bringing a couple of water bottles along anywhere is a must.
+      </p>
+    </div>
+    <div id="colorado" style="display: none;">
+      <h3>Colarado Springs, CO</h3>
+      <section class="images">
+        <img id="colorado-peak" src="Pikes Peak.jpg" alt="Pike's Peak" />
+        <img
+          id="colorado-redrocks"
+          src="GotG Redrocks.jpg"
+          alt="Garden of the Gods"
+        />
+      </section>
+      <p>
+        Colorado is known for its high elevation and you can feel the effects of
+        it immediately. Simply breathing noticable requires more physical effort
+        and, like Dallas, constant hydration is a MUST. Colorado is home to some
+        absolutely stunning mountain ranges, the biggest one being Pike's Peak,
+        which is actually accessible by car.
+      </p>
+    </div>
+    <div id="LA" style="display: none;">
+      <h3>Los Angeles, CA</h3>
+      <section class="images">
+        <img id="la-palms" src="LA Palm Trees.jpg" alt="LA Palm Trees" />
+        <img id="la-wof" src="Hollywood WoF.jpg" alt="Hollywood Walk of Fame" />
+      </section>
+      <p>
+        Los Angeles was the stop that we spent the least time at, but even in
+        that short period I could tell why so many people call it home. The
+        lovely climate coupled with the beautiful scenery is bound to attract an
+        ecclectic mix of individuals.
+      </p>
+    </div>
+    <!-- Conclusion Box with Contact Form -->
+    <footer>
+      <h2>I hope you enjoyed this little travel blog.</h2>
+      <h3>
+        If you want any travel tips or spots to check out in one of these areas,
+        drop a line below.
+      </h3>
+      <form action="mailto:jer.jebaseelan@gmail.com" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Get in touch</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="name" placeholder="johnsmith@email.com" required><br>
+
+            <label for="location">Location:</label>
+            <input type="radio" name="location" id="Chicago,IL" value="IL"><label for="IL">Chicago</label>
+            <input type="radio" name="location" id="Dallas,TX" value="TX"><label for="TX">Dallas</label>
+            <input type="radio" name="location" id="COS,CO" value="CO"><label for="CO">Colorado Springs</label>
+            <input type="radio" name="location" id="LA,CA" value="CA"><label for="CA">Los Angeles</label></br></br>
+            
+            <label for="message">What are you looking for?</label><br>
+            <textarea name="message" id="message" cols="50" rows="5" required></textarea><br>
+
+            <input type="submit">
+        </fieldset>
+    </form>
+    </footer>
+  </body>
+</html>
