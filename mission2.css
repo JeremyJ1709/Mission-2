@@ -28,7 +28,7 @@ nav > ul {
   color: white;
 }
 .btn:hover {
-  background-color: #e2c044;
+  background-color: #fc7753;
   color: black;
 }
 div {
@@ -57,7 +57,7 @@ p {
 footer {
   /* border: 2px solid red; */
   text-align: center;
-  background-color: #fc7753;
+  background-color: #e2c044;
 }
 form {
   margin-top: 20px;
