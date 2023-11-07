@@ -34,3 +34,9 @@ function hideContent4() {
     showHide.style.display = "none";
   }
 }
+const dispE1 = document.querySelector("span");
+let counter = 0;
+function addCount() {
+  counter++;
+  dispE1.textContent = counter;
+}
